@@ -1,23 +1,31 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { QuizService } from '../quiz.service';
+import { faBars, faBook, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Importando FontAwesomeModule diretamente no componente
 
-import { EstudoComponent } from './estudo.component';
+@Component({
+  selector: 'app-estudo',
+  standalone: true,
+  templateUrl: './estudo.component.html',
+  styleUrls: ['./estudo.component.css'],
+  imports: [FontAwesomeModule] 
+})
+export class EstudoComponent implements OnInit {
+  materia: string = '';
+  assunto: string = '';
+  title = 'extensao';
+  faBars = faBars;
+  faBook = faBook;
+  faArrowRight = faArrowRight;
 
-describe('EstudoComponent', () => {
-  let component: EstudoComponent;
-  let fixture: ComponentFixture<EstudoComponent>;
+  constructor(private route: ActivatedRoute) {}
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [EstudoComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(EstudoComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  ngOnInit(): void {
+    // Obtém os parâmetros da URL
+    this.route.params.subscribe(params => {
+      this.materia = params['materia'];
+      this.assunto = params['assunto'];
+    });
+  }
+}
