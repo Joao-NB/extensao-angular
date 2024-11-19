@@ -1,0 +1,39 @@
+<div class="bg-indigo-950 p-6 w-screen h-screen flex flex-col items-center justify-center">
+    <div class="bg-indigo-800 p-6 rounded-2xl w-[90%] max-w-lg">
+      <!-- Foto de Perfil -->
+      <div class="flex flex-col items-center mb-6">
+        <img src="../assets/images/perfil.jpg" alt="Foto de Perfil" class="w-32 h-32 rounded-full border-4 border-indigo-500 mb-4"/>
+        <h2 class="text-slate-50 text-2xl font-semibold">{{ username }}</h2>
+      </div>
+  
+      <!-- Detalhes do Usuário -->
+      <div class="text-slate-50">
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-bold">E-mail:</span>
+          <span>{{ email }}</span>
+        </div>
+  
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-bold">Alterar Senha:</span>
+          <span class="cursor-pointer text-primary hover:text-indigo-300">Alterar</span>
+        </div>
+  
+        <!-- Score -->
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-bold">Score:</span>
+          <span>{{ score }} pontos</span>
+        </div>
+  
+        <!-- Botões de ação -->
+        <div class="flex gap-4 mt-6 justify-center">
+          <button class="active:scale-[0.98] active:duration-75 bg-primary text-slate-50 py-2 px-6 rounded-full flex items-center gap-2 hover:scale-[1.05] transition-all">
+            Alterar Perfil
+          </button>
+          <button class="active:scale-[0.98] active:duration-75 bg-primary text-slate-50 py-2 px-6 rounded-full flex items-center gap-2 hover:scale-[1.05] transition-all">
+            Editar Informações
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
