@@ -8,7 +8,7 @@
     />
     <!-- Conteúdo principal ao lado direito -->
     <div>
-      <div class="bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl">
+      <div class="bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl shadow-lg">
         <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
           <select
             class="bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
@@ -42,7 +42,7 @@
         </div>
 
         <button
-          class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-2 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5"
+          class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-2 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 shadow-md hover:shadow-lg"
         >
           ESTUDAR
         </button>
@@ -58,55 +58,110 @@
     <div class="mb-8">
       <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 1</h2>
       <p class="text-slate-300 mb-4">
-        Ao jogar um dado, qual a probabilidade de obtermos um número ímpar voltado para cima?
+        Ao jogar um dado, qual a probabilidade de obtermos um número ímpar volt        ao jogarmos apenas uma vez?
       </p>
-      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
-        Ver resposta
-      </button>
+      <ul class="space-y-2">
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao1"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">a) 1/6</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao1"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">b) 1/2</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao1"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">c) 1/3</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao1"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">d) 1/4</span>
+          </label>
+        </li>
+      </ul>
     </div>
-
+    
     <!-- Questão 2 -->
     <div class="mb-8">
       <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 2</h2>
       <p class="text-slate-300 mb-4">
-        Se lançarmos dois dados ao mesmo tempo, qual a probabilidade de dois números iguais ficarem voltados para cima?
+        Qual o elemento químico mais abundante no universo?
       </p>
-      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
-        Ver resposta
-      </button>
+      <ul class="space-y-2">
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao2"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">a) Oxigênio</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao2"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">b) Hidrogênio</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao2"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">c) Carbono</span>
+          </label>
+        </li>
+        <li>
+          <label class="flex items-center gap-3">
+            <input
+              type="radio"
+              name="questao2"
+              class="h-5 w-5 text-primary focus:ring-primary focus:ring-2 focus:outline-none"
+            />
+            <span class="text-slate-50">d) Hélio</span>
+          </label>
+        </li>
+      </ul>
     </div>
 
-    <!-- Questão 3 -->
-    <div class="mb-8">
-      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 3</h2>
-      <p class="text-slate-300 mb-4">
-        Qual é a probabilidade de tirar uma carta de espadas de um baralho completo?
-      </p>
-      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
-        Ver resposta
-      </button>
-    </div>
-
-    <!-- Questão 4 -->
-    <div class="mb-8">
-      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 4</h2>
-      <p class="text-slate-300 mb-4">
-        Qual é a probabilidade de tirar um Ás ou um Rei de um baralho de 52 cartas?
-      </p>
-      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
-        Ver resposta
-      </button>
-    </div>
-
-    <!-- Questão 5 -->
-    <div class="mb-8">
-      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 5</h2>
-      <p class="text-slate-300 mb-4">
-        Se lançarmos uma moeda três vezes, qual a probabilidade de dar cara exatamente duas vezes?
-      </p>
-      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
-        Ver resposta
+    <!-- Botão para enviar respostas -->
+    <div class="flex justify-end mt-6">
+      <button
+        class="active:scale-[0.98] hover:scale-[1.02] ease-in-out transition-all bg-green-600 px-6 py-2 text-slate-50 font-semibold rounded-lg shadow-md hover:shadow-lg"
+      >
+        Enviar Respostas
       </button>
     </div>
   </div>
 </div>
+

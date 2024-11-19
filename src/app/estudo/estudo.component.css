@@ -43,4 +43,13 @@
   button:hover {
     background-color: #2563EB;
   }
+
+  .quiz-option {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .quiz-option:active {
+    transform: scale(0.98);
+  }
+  
   

@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Importa
   styleUrls: ['./estudo.component.css'],
   imports: [FontAwesomeModule] 
 })
+
 export class EstudoComponent implements OnInit {
   materia: string = '';
   assunto: string = '';
