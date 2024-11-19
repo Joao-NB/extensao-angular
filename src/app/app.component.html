@@ -1,8 +1,11 @@
- <!-- <div class="bg-secondary h-screen w-screen flex flex-col items-center justify-center">
-      <img class="w-40" src="../assets/images/logo_transparent.png" alt="logo">
-      <h1 class="text-white mb-3 text-base font-bold">PREPARE-SE PARA O VESTIBULAR</h1>
+ <div class="bg-secondary h-screen w-screen flex flex-col items-center justify-center">
+
+      <img class="w-40 absolute top-40 animate-bounceLogo" src="../assets/images/logo_transparent.png" alt="logo">
+
+      <h1 class="text-white mb-4 text-base font-bold">PREPARE-SE PARA O VESTIBULAR</h1>
+
       <div class=" bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl">
-        <div class="flex items-center text-slate-50">
+        <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
           <select
             class=" bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
             name="assunto"
@@ -21,7 +24,7 @@
           </span>
         </div>
 
-        <div class="flex items-center text-slate-50">
+        <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
           <select
             class=" bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
             name="assunto"
@@ -40,13 +43,11 @@
           </span>
         </div>
 
-        <button class="bg-primary pl-7 pr-4 py-3 text-slate-50 font-semibold rounded-md flex items-center justify-center gap-5">
+        <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-2 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5">
           ESTUDAR
           <span>
-            <fa-icon [icon]="faArrowRight"></fa-icon>
+            <fa-icon [icon]="faArrowRight" class="text-xl"></fa-icon>
           </span>
         </button>
       </div>
-    </div> -->
-
-    <app-cadastro></app-cadastro>
+    </div> 
