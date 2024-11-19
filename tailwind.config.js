@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
@@ -10,6 +12,9 @@ module.exports = {
         secondary: "#0E2F56",
         tertiary: "#DB2A4B",
         background: "#1E1B4B",
+        backgroundquestoes: "#103868",
+        'custom-thumb': '#231B8C', 
+        'custom-track': '#1E1B4B',
       },
       fontFamily: {
         sans: "Inter",
@@ -27,9 +32,30 @@ module.exports = {
           '50%': { transform: 'translateY(-4px)' },
         },
       },
+      
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-thin': {
+          'scrollbar-width': 'thin',
+        },
+        '.scrollbar-thumb-custom-thumb': {
+          'scrollbar-color': '#231B8C #1E1B4B',
+        },
+        '.scrollbar-track-custom-track': {
+          '--tw-scrollbar-track': '#1E1B4B',
+        },
+        '.scrollbar-no-buttons': {
+          '&::-webkit-scrollbar-button': {
+            display: 'none',
+          },
+        },
+      });
+    }),
+    require('tailwind-scrollbar'),
+  ],
 };
 
 

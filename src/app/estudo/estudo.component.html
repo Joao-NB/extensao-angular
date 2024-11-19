@@ -1,43 +1,112 @@
-<div class="bg-secondary h-screen w-screen flex flex-col items-center justify-start">
-  <!-- Logo posicionada à esquerda -->
-  <img class="w-40 absolute left-4 top-6" src="../assets/images/logo_transparent.png" alt="logo">
-  
-  <!-- Contêiner com seletores e botão -->
-  <div class="bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl mt-8">
-    <div class="flex items-center text-slate-50">
-      <select
-        class="bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
-        name="assunto"
-        id=""
-      >
-        <option value="MATÉRIA" disabled>
-          Matéria
-        </option>
-        <option value="Biologia">Biologia</option>
-        <option value="Matemática">Matemática</option>
-        <option value="Física">Física</option>
-        <option value="Química">Química</option>
-      </select>
+<div class="bg-secondary h-screen w-screen flex flex-col items-start pt-10 pl-10">
+  <!-- Logo ao lado esquerdo -->
+  <div class="flex items-center gap-10">
+    <img
+      class="w-40 animate-bounceLogo"
+      src="../assets/images/logo_transparent.png"
+      alt="logo"
+    />
+    <!-- Conteúdo principal ao lado direito -->
+    <div>
+      <div class="bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl">
+        <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
+          <select
+            class="bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
+            name="assunto"
+            id=""
+          >
+            <option value="MATÉRIA" disabled>
+              Matéria
+            </option>
+            <option value="Biologia">Biologia</option>
+            <option value="Matemática">Matemática</option>
+            <option value="Física">Física</option>
+            <option value="Química">Química</option>
+          </select>
+        </div>
+
+        <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
+          <select
+            class="bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
+            name="assunto"
+            id=""
+          >
+            <option value="assunto" disabled>
+              ASSUNTO
+            </option>
+            <option value="Biologia">Biologia</option>
+            <option value="Matemática">Matemática</option>
+            <option value="Física">Física</option>
+            <option value="Química">Química</option>
+          </select>
+        </div>
+
+        <button
+          class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-2 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5"
+        >
+          ESTUDAR
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contêiner das questões -->
+  <div class="bg-indigo-950 mt-10 mx-auto p-6 w-[90%] max-w-4xl h-96 rounded-lg shadow-lg overflow-y-auto 
+  scrollbar-thin scrollbar-thumb-custom-thumb scrollbar-track-custom-track scrollbar-no-buttons pr-4">
+    <!-- Questões aqui -->
+    <!-- Questão 1 -->
+    <div class="mb-8">
+      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 1</h2>
+      <p class="text-slate-300 mb-4">
+        Ao jogar um dado, qual a probabilidade de obtermos um número ímpar voltado para cima?
+      </p>
+      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
+        Ver resposta
+      </button>
     </div>
 
-    <div class="flex items-center text-slate-50">
-      <select
-        class="bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
-        name="assunto"
-        id=""
-      >
-        <option value="assunto" disabled>
-          ASSUNTO
-        </option>
-        <option value="Biologia">Biologia</option>
-        <option value="Matemática">Matemática</option>
-        <option value="Física">Física</option>
-        <option value="Química">Química</option>
-      </select>
+    <!-- Questão 2 -->
+    <div class="mb-8">
+      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 2</h2>
+      <p class="text-slate-300 mb-4">
+        Se lançarmos dois dados ao mesmo tempo, qual a probabilidade de dois números iguais ficarem voltados para cima?
+      </p>
+      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
+        Ver resposta
+      </button>
     </div>
 
-    <button class="bg-primary pl-7 pr-4 py-3 text-slate-50 font-semibold rounded-md flex items-center justify-center gap-5">
-      ESTUDAR
-    </button>
+    <!-- Questão 3 -->
+    <div class="mb-8">
+      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 3</h2>
+      <p class="text-slate-300 mb-4">
+        Qual é a probabilidade de tirar uma carta de espadas de um baralho completo?
+      </p>
+      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
+        Ver resposta
+      </button>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="mb-8">
+      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 4</h2>
+      <p class="text-slate-300 mb-4">
+        Qual é a probabilidade de tirar um Ás ou um Rei de um baralho de 52 cartas?
+      </p>
+      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
+        Ver resposta
+      </button>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="mb-8">
+      <h2 class="text-slate-50 text-lg font-semibold mb-2">Questão 5</h2>
+      <p class="text-slate-300 mb-4">
+        Se lançarmos uma moeda três vezes, qual a probabilidade de dar cara exatamente duas vezes?
+      </p>
+      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-3 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5 w-full">
+        Ver resposta
+      </button>
+    </div>
   </div>
 </div>
