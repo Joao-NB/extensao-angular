@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
+  selector: 'app-cadastro',
   standalone: true,
-  styleUrls: ['./login.component.css']
+  imports: [],
+  templateUrl: './cadastro.component.html',
+  styleUrl: './cadastro.component.css'
 })
-export class LoginComponent {
+export class CadastroComponent {
   email: string = '';
   password: string = '';
 

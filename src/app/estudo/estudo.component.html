@@ -1,41 +1,43 @@
-<div class="bg-secondary h-screen w-screen flex items-center justify-center">
-        
-        <!-- Matéria Dropdown -->
-        <div class="flex items-center text-slate-50">
-          <select
-            class="bg-indigo-950 text-slate-50 font-bold p-3 border border-gray-300 rounded-md shadow-sm outline-none"
-            name="assunto"
-            id=""
-          >
-            <option value="MATÉRIA" disabled>
-              Matéria
-            </option>
-            <option value="Biologia">Biologia</option>
-            <option value="Matemática">Matemática</option>
-            <option value="Física">Física</option>
-            <option value="Química">Química</option>
-          </select>
-        </div>
+<div class="bg-secondary h-screen w-screen flex flex-col items-center justify-start">
+  <!-- Logo posicionada à esquerda -->
+  <img class="w-40 absolute left-4 top-6" src="../assets/images/logo_transparent.png" alt="logo">
   
-        <!-- Assunto Dropdown -->
-        <div class="flex items-center text-slate-50">
-          <select
-            class="bg-indigo-950 text-slate-50 font-bold p-3 border border-gray-300 rounded-md shadow-sm outline-none"
-            name="assunto"
-            id=""
-          >
-            <option value="assunto" disabled>
-              Assunto
-            </option>
-            <option value="Biologia">Biologia</option>
-            <option value="Matemática">Matemática</option>
-            <option value="Física">Física</option>
-            <option value="Química">Química</option>
-          </select>
-        </div>
-  
-        <!-- Estudar Button -->
-        <button class="bg-primary px-6 py-2 text-slate-50 font-bold rounded-md flex items-center justify-center gap-2">
-          ESTUDAR
-        </button>
+  <!-- Contêiner com seletores e botão -->
+  <div class="bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl mt-8">
+    <div class="flex items-center text-slate-50">
+      <select
+        class="bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
+        name="assunto"
+        id=""
+      >
+        <option value="MATÉRIA" disabled>
+          Matéria
+        </option>
+        <option value="Biologia">Biologia</option>
+        <option value="Matemática">Matemática</option>
+        <option value="Física">Física</option>
+        <option value="Química">Química</option>
+      </select>
+    </div>
+
+    <div class="flex items-center text-slate-50">
+      <select
+        class="bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
+        name="assunto"
+        id=""
+      >
+        <option value="assunto" disabled>
+          ASSUNTO
+        </option>
+        <option value="Biologia">Biologia</option>
+        <option value="Matemática">Matemática</option>
+        <option value="Física">Física</option>
+        <option value="Química">Química</option>
+      </select>
+    </div>
+
+    <button class="bg-primary pl-7 pr-4 py-3 text-slate-50 font-semibold rounded-md flex items-center justify-center gap-5">
+      ESTUDAR
+    </button>
+  </div>
 </div>

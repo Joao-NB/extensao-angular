@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { QuizService } from '../quiz.service';
+import { faBars, faBook, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-estudo',
+  standalone: true,
   templateUrl: './estudo.component.html',
   styleUrls: ['./estudo.component.css']
 })
 export class EstudoComponent implements OnInit {
   materia: string = '';
   assunto: string = '';
+  title = 'extensao';
+  faBars = faBars;
+  faBook = faBook;
+  faArrowRight = faArrowRight;
 
   constructor(private route: ActivatedRoute) {}
 

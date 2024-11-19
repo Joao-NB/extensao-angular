@@ -8,6 +8,8 @@ module.exports = {
        colors: {
         primary: "#F23054",
         secondary: "#0E2F56",
+        tertiary: "#DB2A4B",
+        background: "#1E1B4B",
       },
       fontFamily: {
         sans: "Inter",

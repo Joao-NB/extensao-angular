@@ -1,0 +1,65 @@
+<div class="flex flex-col items-center justify-center h-screen bg-secondary relative">
+    <!-- Logo com posição absoluta -->
+    <img class="w-40 absolute top-1" src="../assets/images/logo_transparent.png" alt="logo">
+    
+    <!-- Título "Cadastre-se no ..." -->
+    <h2 class="text-3xl font-semibold text-center text-slate-50">
+      Cadastre-se no ...
+    </h2>
+  
+    <!-- Contêiner de login mais estreito -->
+    <div class="w-full max-w-sm p-8 bg-background rounded-lg shadow-lg mt-6">
+      <!-- Formulário de Cadastro -->
+      <form class="space-y-6">
+        <!-- Nome do Usuário -->
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-400">Nome de Usuário</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="mt-1 block w-full px-4 py-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Digite seu nome de usuário"
+            required
+          />
+        </div>
+  
+        <!-- E-mail -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-400">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 block w-full px-4 py-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+  
+        <!-- Senha -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-400">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 block w-full px-4 py-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+  
+        <!-- Botão de Cadastro -->
+        <div>
+          <button
+            type="submit"
+            class="w-full py-2 px-4 bg-primary text-white font-semibold rounded-md shadow-lg hover:bg-tertiary focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            Cadastre-se
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

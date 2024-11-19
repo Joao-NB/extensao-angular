@@ -4,11 +4,14 @@ import { RouterOutlet } from '@angular/router';
 //import {LucideAngularModule, Notebook, Library, ArrowRight} from "lucide-angular";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faBook, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { LoginComponent } from './login/login.component';
+import { EstudoComponent } from './estudo/estudo.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FontAwesomeModule],
+  imports: [FontAwesomeModule, LoginComponent, EstudoComponent, CadastroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
