@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { EstudoComponent } from './estudo/estudo.component.spec';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { NavegacaoComponent } from './navegacao/navegacao.component';
 export const routes: Routes = [
   {
     path: '',
@@ -24,5 +25,9 @@ export const routes: Routes = [
   {
     path: 'perfil',
     component: PerfilComponent
+  },
+  {
+    path: 'navegacao',
+    component: NavegacaoComponent
   }
 ];

@@ -1,21 +1,12 @@
+// stopot2.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {
-  faBars,
-  faBook,
-  faArrowRight,
-} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [FontAwesomeModule, RouterLink, RouterOutlet],
+  selector: 'app-stopot2',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  faBars = faBars;
-  faBook = faBook;
-  faArrowRight = faArrowRight;
+  title = 'JOGAR STOP NUNCA FOI TÃO INTERATIVO!';
+  description = 'Conhecido como Stop, Adedanha ou Adedonha, o Stopots multiplica a diversão com interação e tecnologia.';
 }

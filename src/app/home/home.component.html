@@ -1,53 +1,45 @@
- <div class="bg-secondary h-screen w-screen flex flex-col items-center justify-center">
+<header class="bg-secondary shadow-md py-4">
+  <div class="container mx-auto flex justify-center">
+    <img class="w-40 absolute top-3 animate-bounceLogo" src="../assets/images/logo_transparent.png" alt="logo">
+  </div>
+</header>
 
-      <img class="w-40 absolute top-40 animate-bounceLogo" src="../assets/images/logo_transparent.png" alt="logo">
-
-      <h1 class="text-white mb-4 text-base font-bold">PREPARE-SE PARA O VESTIBULAR</h1>
-
-      <div class=" bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl">
-        <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
-          <select
-            class=" bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
-            name="assunto"
-            id=""
-          >
-            <option value="MATÉRIA" disabled>
-              Matéria
-            </option>
-            <option value="Biologia">Biologia</option>
-            <option value="Matemática">Matemática</option>
-            <option value="Física">Física</option>
-            <option value="Química">Química</option>
-          </select>
-          <span>
-           <fa-icon [icon]="faBook"></fa-icon>
-          </span>
+<main class="bg-secondary min-h-screen flex flex-col items-center justify-center text-center px-4">
+  <h1 class="text-white text-4xl font-bold text-center mb-8">EnemQuizz</h1>
+  <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 mb-8">
+    <div class="bg-indigo-950 text-white p-8 rounded-lg shadow-md">
+      <h2 class="text-lg font-medium mb-4">Entre como anônimo</h2>
+      <div class="flex flex-col items-center relative">
+        <!-- Avatar Container -->
+        <div class="relative group">
+          <img src="../assets/images/avatar-1.avif" 
+               alt="Avatar" 
+               class="w-28 h-28 rounded-full mb-4 border-4 border-[#DB2A4B] transition-transform group-hover:scale-105">
+          <!-- Hidden Hover Element -->
+          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <button class="text-white text-sm font-semibold bg-blue-500 py-1 px-3 rounded-full">Trocar</button>
+          </div>
         </div>
-
-        <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
-          <select
-            class=" bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
-            name="assunto"
-            id=""
-          >
-            <option value="assunto" disabled>
-              ASSUNTO
-            </option>
-            <option value="Biologia">Biologia</option>
-            <option value="Matemática">Matemática</option>
-            <option value="Física">Física</option>
-            <option value="Química">Química</option>
-          </select>
-          <span>
-             <fa-icon [icon]="faBars"></fa-icon>
-          </span>
+        <!-- Nickname and Theme -->
+        <div class="flex flex-col space-y-4 w-full max-w-sm mt-4">
+          <div class="flex items-center justify-center w-full"> <!-- Centraliza o label e input -->
+            <label for="nick" class="text-gray-300 text-lg font-medium w-24 text-left">Nick:</label>
+            <!-- Ajusta o input para ter largura fixa e centralizá-lo -->
+            <input type="text" id="nick" class="text-textinputcolor border-2 text-lg border-gray-600 p-2 rounded-xl w-48 mx-auto" value="User5013">
+          </div>
         </div>
-
-        <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-2 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5" routerLink="/estudo">
-          ESTUDAR
-          <span>
-            <fa-icon [icon]="faArrowRight" class="text-xl"></fa-icon>
-          </span>
-        </button>
       </div>
-    </div>  
+      <div class="mt-6">
+        <a href="navegacao"><button class="active:scale-[1.15] active:duration-75 hover:scale-[1.07] ease-in-out transition-all py-3 px-20 bg-primary border-4 border-[#DB2A4B] text-white font-extrabold text-xl rounded-full shadow-lg">Jogar!</button></a>
+      </div>
+    </div>
+    <div class="bg-indigo-950 p-8 rounded-lg shadow-md">
+      <h2 class="text-white text-2xl font-medium mb-4">Ou</h2>
+      <div class="flex flex-col space-y-2">
+        <a href="login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Logar</a>
+        <a href="cadastro" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cadastrar</a>
+        <a href="#" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Google</a>
+      </div>
+    </div>
+  </div>
+</main>

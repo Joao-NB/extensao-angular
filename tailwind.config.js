@@ -13,6 +13,7 @@ module.exports = {
         tertiary: "#DB2A4B",
         background: "#1E1B4B",
         backgroundquestoes: "#103868",
+        textinputcolor: "#797979",
         'custom-thumb': '#231B8C', 
         'custom-track': '#1E1B4B',
       },
