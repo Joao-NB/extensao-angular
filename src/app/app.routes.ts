@@ -7,7 +7,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 export const routes: Routes = [
   {
-    path: 'test',
+    path: '',
     component: HomeComponent,
   },
   {
@@ -27,7 +27,7 @@ export const routes: Routes = [
     component: PerfilComponent
   },
   {
-    path: '',
+    path: 'navegacao',
     component: NavegacaoComponent
   }
 ];
