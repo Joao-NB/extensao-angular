@@ -1,53 +1,60 @@
-<form class="bg-secondary h-screen w-screen flex flex-col items-center justify-center">
+<form class="bg-secondary min-h-screen w-screen flex flex-col items-center justify-center p-4">
 
-    <img class="w-40 absolute top-40 animate-bounceLogo" src="../assets/images/logo_transparent.png" alt="logo">
+  <img
+    class="w-28 md:w-40 absolute top-32 md:top-40 animate-bounceLogo"
+    src="../assets/images/logo_transparent.png"
+    alt="logo"
+  />
 
-    <h1 class="text-white mb-4 text-base font-bold">PREPARE-SE PARA O VESTIBULAR</h1>
+  <h1 class="text-white mb-4 text-sm md:text-base font-bold text-center">
+    PREPARE-SE PARA O VESTIBULAR
+  </h1>
 
-    <div class=" bg-indigo-950 p-4 px-10 flex items-center justify-center gap-10 rounded-xl">
-      <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
-        <select
-          class=" bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
-          name="assunto"
-          id=""
-        >
-          <option value="MATÉRIA" disabled>
-            Matéria
-          </option>
-          <option value="Biologia">Biologia</option>
-          <option value="Matemática">Matemática</option>
-          <option value="Física">Física</option>
-          <option value="Química">Química</option>
-        </select>
-        <span>
-         <fa-icon [icon]="faBook"></fa-icon>
-        </span>
-      </div>
-
-      <div class="flex items-center text-slate-50 active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
-        <select
-          class=" bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none border-none"
-          name="assunto"
-          id=""
-        >
-          <option value="assunto" disabled>
-            ASSUNTO
-          </option>
-          <option value="Biologia">Biologia</option>
-          <option value="Matemática">Matemática</option>
-          <option value="Física">Física</option>
-          <option value="Química">Química</option>
-        </select>
-        <span>
-           <fa-icon [icon]="faBars"></fa-icon>
-        </span>
-      </div>
-
-      <button class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary pl-10 pr-6 py-2 text-slate-50 text-xs font-semibold rounded-2xl flex items-center justify-center gap-5" routerLink="/estudo">
-        ESTUDAR
-        <span>
-          <fa-icon [icon]="faArrowRight" class="text-xl"></fa-icon>
-        </span>
-      </button>
+  <div class="bg-indigo-950 p-4 md:px-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 rounded-xl w-full max-w-md md:max-w-3xl">
+    <div class="flex items-center text-slate-50 w-full md:w-auto active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
+      <select
+        class="bg-indigo-950 text-slate-50 font-semibold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none w-full md:w-auto"
+        name="materia"
+      >
+        <option value="MATÉRIA" disabled selected>
+          Matéria
+        </option>
+        <option value="Biologia">Biologia</option>
+        <option value="Matemática">Matemática</option>
+        <option value="Física">Física</option>
+        <option value="Química">Química</option>
+      </select>
+      <span class="ml-2">
+        <fa-icon [icon]="faBook"></fa-icon>
+      </span>
     </div>
-  </form>  
+
+    <div class="flex items-center text-slate-50 w-full md:w-auto active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all">
+      <select
+        class="bg-indigo-950 text-slate-50 font-bold appearance-none p-2 border border-gray-300 rounded-md shadow-sm outline-none w-full md:w-auto"
+        name="assunto"
+      >
+        <option value="ASSUNTO" disabled selected>
+          Assunto
+        </option>
+        <option value="Biologia">Biologia</option>
+        <option value="Matemática">Matemática</option>
+        <option value="Física">Física</option>
+        <option value="Química">Química</option>
+      </select>
+      <span class="ml-2">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </span>
+    </div>
+
+    <button
+      class="active:scale-[0.98] hover:scale-[1.01] ease-in-out transition-all bg-primary px-6 md:pl-10 md:pr-6 py-2 text-slate-50 text-xs md:text-sm font-semibold rounded-2xl flex items-center justify-center gap-2 md:gap-5 w-full md:w-auto"
+      routerLink="/estudo"
+    >
+      ESTUDAR
+      <span>
+        <fa-icon [icon]="faArrowRight" class="text-lg"></fa-icon>
+      </span>
+    </button>
+  </div>
+</form>
